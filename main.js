@@ -49,7 +49,7 @@ function atualizarTabela() {
 function atualizaMedia() {
     const mediaFinal = calcularMedia();
 
-    document.getElementById('mediaFinal').innerHTML = mediaFinal;
+    document.getElementById('mediaFinal').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('resultado').innerHTML = mediaFinal >= notaMinima ? aprovado : reprovado;
 }
 
